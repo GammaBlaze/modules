@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+.terraform*
+*.tfstate
+=======
+.terraform*
+*.tfstate
+>>>>>>> 2f27f70af92515dbe1c671067a322bea86008793
+*.tfstate.backup
