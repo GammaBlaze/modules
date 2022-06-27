@@ -58,7 +58,7 @@ resource "aws_autoscaling_group" "example" {
   name = "${var.cluster_name}-${aws_launch_configuration.example.name}"
 
   launch_configuration = aws_launch_configuration.example.name
-  vpc_zone_identifier  = data.aws_subnets_ids.default.ids
+  vpc_zone_identifier  = data.aws_subnet_ids.default.ids
   target_group_arns    = [aws_lb_target_group.asg.arn]
   health_check_type    = "ELB"
 
